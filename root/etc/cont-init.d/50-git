@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv bash
+
+# make our folders and links
+#
+echo pk > /usr/share/nginx/html/index.html
