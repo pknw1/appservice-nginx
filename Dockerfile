@@ -1,9 +1,7 @@
-FROM linuxserver/nginx:latest
+FROM nginx:latest
 
 # install packages
-RUN \
- apk add --no-cache --upgrade \
-	git 
+RUN apt update && apt install -y git
 
 # add local files
 COPY root/ /
